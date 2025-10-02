@@ -1,0 +1,143 @@
+<!-- Author: Aisulu | Contribution: created the homepage -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sweet Dreams — Cakes & Desserts</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/png" href="images/ChocolateDelight.jpeg">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1>Sweet Dreams</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="recipes.html">Recipes</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="hero">
+    <h2>Welcome to the World of Sweet Desserts ✨</h2>
+    <p>Delicious cakes, dreamy desserts, and love in every slice.</p>
+    <img src="images/red.jpg" alt="Beautiful Cake">
+  </div>
+  
+  <!-- Inline CSS пример -->
+  <p style="color:red; text-align:center; font-weight:bold;">
+    Special Offer: Free Cupcake with every order this week! 🧁
+  </p>
+
+  <section>
+    <h2>Popular Cakes</h2>
+    <div class="gallery">
+      <div class="card">
+        <img src="images/ChocolateDelight.jpeg" alt="Chocolate Delight">
+        <h3>Chocolate Delight</h3>
+        <p>Rich chocolate layers with creamy frosting.</p>
+        <a href="recipes.html" class="btn">View Recipe 🍫</a>
+      </div>
+      <div class="card">
+        <img src="images/StrawberryDream.jpeg" alt="Strawberry Dream">
+        <h3>Strawberry Dream</h3>
+        <p>Light sponge cake with fresh strawberries.</p>
+        <a href="recipes.html" class="btn">View Recipe 🍓</a>
+      </div>
+      <div class="card">
+        <img src="images/VanillaCakeBitezly.jpg" alt="Vanilla Cake Bitezly">
+        <h3>Vanilla Cake Bitezly</h3>
+        <p>Classic vanilla cake topped with whipped cream.</p>
+        <a href="recipes.html" class="btn">View Recipe 🍰</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ID Selector и Positioning -->
+  <section id="class-schedule">
+    <h2>Baking Classes Schedule</h2>
+    <div style="position:relative; display:inline-block; margin-bottom:20px;">
+      <img src="images/ChocolateDelight.jpeg" alt="Class Promo" width="300">
+      <p style="position:absolute; bottom:10px; left:10px; background:white; padding:5px; border-radius:5px;">
+        New Class!
+      </p>
+    </div>
+    <table border="1" cellpadding="10" cellspacing="0">
+      <tr>
+        <th>Date</th>
+        <th>Time</th>
+        <th>Topic</th>
+      </tr>
+      <tr>
+        <td>Oct 5, 2025</td>
+        <td>10:00 AM</td>
+        <td>Chocolate Cake Mastery</td>
+      </tr>
+      <tr>
+        <td>Oct 12, 2025</td>
+        <td>2:00 PM</td>
+        <td>Fruit Tart Decoration</td>
+      </tr>
+      <tr>
+        <td>Oct 19, 2025</td>
+        <td>4:00 PM</td>
+        <td>Vanilla Cream Secrets</td>
+      </tr>
+    </table>
+  </section>
+
+  <!-- Используем em -->
+  <section>
+    <h2 style="font-size:2em;">Why Choose Sweet Dreams?</h2>
+    <p>Because our cakes are made with love and passion! 💖</p>
+  </section>
+
+  <!-- New Section: Form -->
+  <section>
+    <h2>Join Our Sweet Community</h2>
+    <form action="#" method="post">
+      <label for="name">Your Name:</label><br>
+      <input type="text" id="name" name="name" required><br><br>
+
+      <label for="email">Email:</label><br>
+      <input type="email" id="email" name="email" required><br><br>
+
+      <label for="dessert">Favorite Dessert:</label><br>
+      <input type="text" id="dessert" name="dessert"><br><br>
+
+      <button type="submit" class="btn">Submit 🍩</button>
+    </form>
+  </section>
+
+  <!-- New Section: Upcoming Events -->
+  <section>
+    <h2>Upcoming Events</h2>
+    <p>Next baking class will be on 
+       <time datetime="2025-09-25">September 25, 2025</time>.
+    </p>
+    <blockquote>
+        "Baking is both an art and a science. With love, every cake tells a story."
+    </blockquote>
+  </section>
+
+  <section>
+    <h2>Секреты сладостей</h2>
+    <p class="demo-text" id="demo" style="color:purple;">
+      Этот текст показывает приоритет CSS, а заодно напоминает: 
+      главное — это вкус, но и оформление играет важную роль. 
+      У нас десерты красивые снаружи и волшебные внутри.
+    </p>
+  </section>
+  
+  
+
+  <footer>
+    <p>© 2025 Sweet Dreams. Made with love by Aisulu ❤️</p>
+  </footer>
+</body>
+</html>
