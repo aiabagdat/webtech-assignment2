@@ -1,0 +1,217 @@
+body {
+    font-family: "Open Sans", sans-serif; /* sans-serif */
+    margin: 0;
+    padding: 0;
+    background-image: url("images/background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #333;
+    line-height: 1.6; /* readability */
+  }
+  
+  /* ---- Header ---- */
+  header {
+    background: #a20512;
+    padding: 20px;
+    text-align: center;
+  }
+  header h1 {
+    margin: 0;
+    color: white;
+    font-family: "Pacifico", cursive;
+    font-size: 2.8em;
+  }
+  
+  /* Navigation */
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+  }
+  nav ul li {
+    display: inline;
+    margin: 0 15px;
+  }
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.25s, background 0.25s;
+    padding: 6px 8px;
+    border-radius: 6px;
+  }
+  nav ul li a:hover,
+  nav ul li a.active {
+    color: #ffd700;
+    background: rgba(255,255,255,0.04);
+  }
+  
+  /* ---- Hero ---- */
+  .hero {
+    text-align: center;
+    padding: 60px 20px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 20px;
+    margin: 40px;
+  }
+  .hero h2 {
+    font-family: "Pacifico", cursive;
+    color: #a20512;
+    font-size: 2.2em;
+  }
+  .hero p { font-size: 1.1em; margin: 15px 0; }
+  .hero img { width: 350px; border-radius: 20px; margin-top: 20px; box-shadow: 0 5px 15px rgba(0,0,0,0.2); }
+  
+  /* ---- Sections ---- */
+  section {
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.95);
+    margin: 40px;
+    border-radius: 15px;
+  }
+  h2 {
+    color: #a20512;
+    text-align: center;
+    font-family: "Pacifico", cursive;
+    margin-bottom: 30px;
+  }
+  
+  /* ---- Gallery Cards ---- */
+  .gallery {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+  .card {
+    background: rgba(255, 255, 255, 0.922);
+    border-radius: 15px;
+    padding: 20px;
+    width: 280px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  .card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+  }
+  .card img { width: 100%; border-radius: 12px; margin-bottom: 15px; object-fit: contain; }
+  .card h3 { color: #a20512; margin: 10px 0; }
+  .card p { font-size: 0.95em; margin-bottom: 15px; }
+  
+  /* ---- Buttons ---- */
+  .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #a20512;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background 0.3s, transform 0.2s;
+  }
+  .btn:hover { background: #ff6f61; transform: translateY(-3px); }
+  
+  /* ---- Footer ---- */
+  footer {
+    background: #e63946;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+  }
+  
+  /* ===========================
+     Extra rules for Assignment 2
+     =========================== */
+  
+  /* ---- Selector types & priority ---- */
+  p { color: #333; font-size: 1rem; }        /* element */
+  .highlight { font-size: 1.5em; color: #e63946; font-weight: bold; } /* class */
+  #intro { font-size: 1.2rem; color: darkblue; text-align: center; max-width: 700px; margin: 20px auto; } /* id */
+  
+  /* Demo priority */
+  .demo-text { color: orangered; }
+  #demo { color: seagreen; }
+  
+  /* ---- Round Photos ---- */
+  .round-photo,
+  .profile-photo {
+    display: block;
+    margin: 30px auto;
+    border-radius: 50%;
+    width: 280px;
+    height: 280px;
+    object-fit: cover;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  }
+  
+  /* ---- Float & Columns ---- */
+  .column {
+    float: left;
+    width: 45%;
+    margin: 2%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    background: #f9f9f9;
+    box-sizing: border-box;
+  }
+  .clearfix::after { content: ""; display: table; clear: both; }
+  @media (max-width: 800px) {
+    .column { float: none; width: 100%; margin: 10px 0; }
+    .hero img, .round-photo, .profile-photo { width: 220px; height: 220px; }
+  }
+  
+  /* ---- Profile Card ---- */
+  .profile-section { text-align: center; margin: 30px 0; }
+  .profile-card {
+    width: 300px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 18px;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+    transition: transform 0.25s, box-shadow 0.25s, border 0.25s;
+  }
+  .profile-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.2);
+    border: 2px solid #ffd700;
+  }
+  .profile-card h3 { margin: 8px 0 4px; font-family: "Courier New", monospace; color: #a20512; }
+  .profile-card p.small { color: #555; line-height: 1.4; }
+  #aisulu-profile { border-top: 4px solid #ff9800; }
+  
+  /* ---- Fonts Examples ---- */
+  .serif { font-family: "Georgia", serif; }
+  .sans { font-family: "Open Sans", sans-serif; }
+  .mono { font-family: "Courier New", monospace; }
+  
+  /* ---- Spacing & Alignment ---- */
+  .left-align { text-align: left; }
+  .center-align { text-align: center; }
+  .right-align { text-align: right; }
+  .justify-align { text-align: justify; }
+  
+  /* ---- Form ---- */
+  input[type="text"], input[type="email"], textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    font-size: 1rem;
+    transition: border 0.2s, box-shadow 0.2s;
+  }
+  input:focus, textarea:focus {
+    border-color: #a20512;
+    outline: none;
+    box-shadow: 0 0 0 4px rgba(162,5,18,0.06);
+  }
+  
+  /* ---- Links ---- */
+  a { transition: color .2s; }
+  a:hover { text-decoration: underline; }
